@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiropraxia</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header> 
@@ -15,20 +15,23 @@
         </div>
         <nav>
             <ul class="nav nav-tabs ">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Quiropractica</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                <li class="nav-item menu">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-item menu">
-                <a class="nav-link "  href="contacto.html">Contactos</a>
+                    <a class="nav-link active" aria-current="page" href="./pages/quiropractica.html">Quiropractica</a>
                 </li>
                 <li class="nav-item menu">
-                <a class="nav-link " href="#">Nosotros</a>
+                    <a class="nav-link" href="#servicios">Servicios</a>
                 </li>
                 <li class="nav-item menu">
-                <a class="nav-link" herf="turnos.html">Turnos</a>
+                <a class="nav-link "  href="./pages/contactos.html">Contactos</a>
+                </li>
+                <li class="nav-item menu">
+                <a class="nav-link " href="./pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item menu">
+                <a class="nav-link " href="./pages/turno.hmtl">Turnos</a>
                 </li>
             </ul>
 
@@ -39,107 +42,197 @@
 
     <main>
         
-        <div class="video">
-            <h1>Consultorio Quirpractico y de Medicina China</h1>
-            
-        </div>
+        <h1>Consultorio Quiropráctico y de Medicina China</h1>
+        
+        <a href="https://www.youtube.com/watch?v=M2CfH0FUzxI" target="_blank" class="youtube-icon">
+            <i class="fa-brands fa-youtube"></i> Mirar Video
+        </a>
+
         <div class="bienvenido">
-            <h2>Bievenidos</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, sed provident. Incidunt fugit ipsam autem dolorum itaque necessitatibus odit quidem accusamus! Perspiciatis aspernatur molestias laboriosam officiis. Perspiciatis molestias id deleniti!</p>
+            <h2>Bievenidos al consultorio quiropráctico y medicina china de <br> 
+                Daniel Dean</h2>
+            <p>En nuestro espacio, encontrarás un refugio de calma y sanación diseñado para restablecer tu bienestar físico, mental y emocional. A través de técnicas precisas de quiropraxia y los milenarios conocimientos de la medicina tradicional china, trabajamos para aliviar dolores, mejorar la movilidad y armonizar tu energía vital.
+                
+                Daniel Dean, con dedicación y compromiso, te acompaña en cada sesión, brindándote atención personalizada para ayudarte a recuperar el equilibrio natural de tu cuerpo. Ya sea que busques aliviar tensiones, corregir desajustes posturales o explorar terapias alternativas para potenciar tu salud, aquí encontrarás un ambiente cálido, profesional y enfocado en tu calidad de vida.
+                
+                Descubrí una nueva forma de cuidar tu cuerpo y conectar con tu esencia. Tu bienestar es nuestra prioridad, y estamos aquí para guiarte en cada paso hacia una vida más plena, saludable y en armonía. </p>
         </div>
-        
-        
-        
-        <section class="card-container"> 
-                <div>
-                    <h2 id="servicios">Servicios</h2>
+        <section class="card-imagenes">
+
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/terapia.jpg" class="card-img-top" alt="terapia">
+                <div class="card-body">
+                <p class="card-text">"Bienvenido a un espacio diseñado para tu relajación y recuperación."</p>
                 </div>
-                <div class="accordion-card">
-        <!-- Primer conjunto de acordeones -->
-        <div class="accordion accordion-flush">
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            1. Ajustes Quiroprácticos Personalizados
-            </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Alivio del dolor de espalda, cuello y articulaciones  <code>con técnicas precisas</code> para restaurar el equilibrio y mejorar la movilidad.</div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/masaje.jpg" class="card-img-top" alt="masaje">
+                <div class="card-body">
+                <p class="card-text">Técnicas precisas para aliviar el dolor y mejorar tu movilidad."</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/img/saumerios.jpg" class="card-img-top" alt="saumerios">
+                <div class="card-body">
+                <p class="card-text">"Armoniza tu energía vital con terapias milenarias."</p>
+                </div>
+            </div>
+        </section>
+
+
+<!-- tarjetas blog  -->
+<section class="blog">
+    <h2 class="titulo-blog">Consejos para tu Bienestar y Salud Postural</h2>
+
+    <div class="blog-container">
+        <div class="blog-card">
+            <h3>5 ejercicios para mejorar tu postura</h3>
+            <p>Descubrí ejercicios simples que podés hacer en casa para fortalecer tu columna y prevenir dolores.</p>
+            <a href="https://www.youtube.com/watch?v=kVWLzYvXK-Q" class="read-more" target="_blank">Leer más</a>
         </div>
+
+        <div class="blog-card">
+            <h3>Beneficios de la quiropraxia</h3>
+            <p>Conocé cómo los ajustes quiroprácticos pueden ayudarte a aliviar tensiones, mejorar la movilidad y reducir el estrés.</p>
+            <a href="https://as.com/masdeporte/polideportivo/fuerza-flexibilidad-o-relajacion-este-es-el-tipo-de-yoga-que-debes-escoger-segun-tu-objetivo-n/" class="read-more" target="_blank">Leer más</a>
         </div>
-    </div>
-    
-    <div class="accordion accordion-flush">
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            2. Terapia para Hernias de Disco
-            </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Tratamientos   <code>no invasivos</code> que ayudan a reducir la compresión nerviosa y mejorar la calidad de vida sin cirugía.</div>
+
+        <div class="blog-card">
+            <h3>Técnicas de respiración para relajarte</h3>
+            <p>Aprendé a controlar la respiración para disminuir la ansiedad, mejorar tu energía y potenciar tu bienestar diario.</p>
+            <a href="https://es.wikipedia.org/wiki/Anapanasati" class="read-more" target="_blank">Leer más</a>
         </div>
+
+        <div class="blog-card">
+            <h3>Cómo prepararte para tu primera sesión de quiropraxia</h3>
+            <p>Descubrí qué esperar en tu primera visita al quiropráctico y cómo prepararte para aprovechar al máximo tu sesión.</p>
+            <a href="https://www.youtube.com/watch?v=_sXeMeMojnk" class="read-more" target="_blank">Leer más</a>
         </div>
-    </div>
-    
-    <div class="accordion accordion-flush">
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            3. Corrección Postural Integral
-            </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Evaluación y ejercicios <code>para mejorar la postura, aliviar tensiones musculares y prevenir lesiones</code> a largo plazo.</div>
-        </div>
-        </div>
-    </div>
-    
-    <!-- Segundo conjunto de acordeones -->
-    <div class="accordion accordion-flush">
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-            4. Tratamiento de Dolores Crónicos
-            </button>
-        </h2>
-        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Abordaje especializado para  <code> migrañas, ciática y dolores persistentes</code> , buscando la causa raíz para un alivio duradero.</div>
-        </div>
-        </div>
-    </div>
-    
-    <div class="accordion accordion-flush">
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-            5. Rehabilitación y Recuperación Física
-            </button>
-        </h2>
-        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Planes personalizados para<code>acelerar la recuperación </code> tras lesiones deportivas, accidentes o cirugías.</div>
-        </div>
-        </div>
-    </div>
-    
-    <div class="accordion accordion-flush">
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-            6. Quiropraxia para el Bienestar General
-            </button>
-        </h2>
-        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Sesiones orientadas a <code>optimizar la salud, reducir el estrés </code> y potenciar el funcionamiento del sistema nervioso.</div>
-        </div>
-        </div>
-    </div>
     </div>
 </section>
+
+        <!--Acordiones-->
+        <section class="card-container"> 
+            <div>
+                <h2 id="servicios">Servicios</h2>
+            </div>
+            <div class="accordion-card">
+    <!-- Primer conjunto de acordeones -->
+    <div class="accordion accordion-flush">
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        1. Ajustes Quiroprácticos Personalizados
+        </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Alivio del dolor de espalda, cuello y articulaciones  <code>con técnicas precisas</code> para restaurar el equilibrio y mejorar la movilidad.</div>
+    </div>
+    </div>
+</div>
+
+<div class="accordion accordion-flush">
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        2. Terapia para Hernias de Disco
+        </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Tratamientos   <code>no invasivos</code> que ayudan a reducir la compresión nerviosa y mejorar la calidad de vida sin cirugía.</div>
+    </div>
+    </div>
+</div>
+
+<div class="accordion accordion-flush">
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        3. Corrección Postural Integral
+        </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Evaluación y ejercicios <code>para mejorar la postura, aliviar tensiones musculares y prevenir lesiones</code> a largo plazo.</div>
+    </div>
+    </div>
+</div>
+
+<!-- Segundo conjunto de acordeones -->
+<div class="accordion accordion-flush">
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        4. Tratamiento de Dolores Crónicos
+        </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Abordaje especializado para  <code> migrañas, ciática y dolores persistentes</code> , buscando la causa raíz para un alivio duradero.</div>
+    </div>
+    </div>
+</div>
+
+<div class="accordion accordion-flush">
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        5. Rehabilitación y Recuperación Física
+        </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Planes personalizados para<code>acelerar la recuperación </code> tras lesiones deportivas, accidentes o cirugías.</div>
+    </div>
+    </div>
+</div>
+
+<div class="accordion accordion-flush">
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+        6. Quiropraxia para el Bienestar General
+        </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Sesiones orientadas a <code>optimizar la salud, reducir el estrés </code> y potenciar el funcionamiento del sistema nervioso.</div>
+    </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+<!-- turnos -->
+<section class="franja-turno">
+    <div class="contenido-franja">
+        <div class="texto-franja">
+            <h2>¿Necesitás atención personalizada?</h2>
+            <p>En nuestro consultorio, te ofrecemos tratamientos quiroprácticos y de medicina china adaptados a tus necesidades. ¡No esperes más para sentirte mejor!</p>
+            <a href="turnos.html" class="boton-turno">Saca tu turno aquí</a>
+        </div>
+        <div class="imagen-franja">
+            <img src="./assets/img/turnos.jpg" alt="Consulta quiropráctica">
+        </div>
+    </div>
+</section>
+
+<section class="saber-mas">
+    <div class="contenido-mas">
+        <h2>Queres conocer mas sobre la quirpraxia</h2>
+        <p>¿Te interesa mejorar tu salud de manera natural? La quiropraxia podría ser justo lo que estás buscando. Esta práctica se ha convertido en un pilar fundamental del bienestar, ayudando a miles de personas a recuperar el equilibrio de su cuerpo y mejorar su calidad de vida. A continuación, te contamos todo lo que necesitas saber sobre su origen, beneficios y cómo puede transformar tu día a día.</p>
+        <a href="./pages/quiropractica.html" class="saber-mas-btn">Saber más</a>
+
+    </div>
+
+</section>
+
+
 
     </main>
 
 
+
+
+
+<!-- footer -->
     
     <footer class="py-4">
     <div class="container-fluid">
@@ -147,16 +240,16 @@
             <!-- Información de contacto -->
             <div class="col-md-4">
                 <h5>Contacto</h5>
-                <p><i class="bi bi-geo-alt"></i> Dirección: Calle Ficticia 123, Ciudad, País</p>
-                <p><i class="bi bi-telephone"></i> Teléfono: (123) 456-7890</p>
+                <p><i class="bi bi-geo-alt"></i> Dirección: Hutson 768, Mendoza, Argentina</p>
+                <p><i class="bi bi-telephone"></i> Teléfono: (261) 5632792</p>
             </div>
             <!-- Enlaces rápidos -->
             <div class="col-md-4">
                 <h5>Enlaces rápidos</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Inicio</a></li>
-                    <li><a href="#" class="text-white">Servicios</a></li>
-                    <li><a href="#" class="text-white">Contacto</a></li>
+                    <li><a href="#" class="">Inicio</a></li>
+                    <li><a href="#servicio" class="">Servicios</a></li>
+                    <li><a href="./pages/contactos.html" class="">Contacto</a></li>
                 </ul>
             </div>
             <!-- Redes sociales -->
