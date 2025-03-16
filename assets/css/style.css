@@ -25,7 +25,7 @@ header{
     padding: 10px 20px;
 }
 .logo img {
-    height: 60px; /* Tamaño del logo */
+    height: 60px; 
     width: auto;
 }
 header nav .menu{
@@ -49,7 +49,7 @@ nav ul li {
     display: inline;
 }
 .nav-item .nav-link:hover {
-    color: #baeb0b; /* Cambia este color al que prefieras */
+    color: #baeb0b; 
 }
 
 
@@ -75,15 +75,15 @@ main h1{
     
 }
 .card-body{
-    background-color: #e6f7ff; /* Fondo celeste claro */
-    border-radius: 0 0 10px 10px; /* Bordes redondeados solo en la parte inferior */
-    padding: 15px; /* Espaciado interno */
+    background-color: #e6f7ff; 
+    border-radius: 0 0 10px 10px; 
+    padding: 15px; 
 }
 
 .card-text{
     text-align: center;
-    color: #333; /* Color de texto oscuro */
-    margin: 0; /* Elimina el margen predeterminado */
+    color: #333; 
+    margin: 0; 
     
 }
 .youtube-icon {
@@ -125,7 +125,7 @@ main h1{
 .titulo-blog{
     text-align: center;
     padding: 30px;
-    margin: 20px 0; /* Ajusta el margen para que no haya espacio extra a los lados */
+    margin: 20px 0; 
     color: white;
 }
 .blog-container{
@@ -156,7 +156,7 @@ main h1{
 .blog-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Alinea el botón en la parte inferior */
+    justify-content: space-between; 
     width: 100%;
     max-width: 100%;
 }
@@ -176,15 +176,15 @@ main h1{
 }
 
 .blog-card h3 {
-    /* font-size: 1.5em; */
+    
     margin-bottom: 10px;
 }
 
 .blog-card p {
-    /* font-size: 1em; */
+    
     line-height: 1.6;
-    margin-bottom: 15px; /* Espacio entre el párrafo y el botón */
-    font-size: 1em; /* Tamaño de fuente ajustado */
+    margin-bottom: 15px; 
+    font-size: 1em; 
 }
 
 .read-more {
@@ -196,8 +196,8 @@ main h1{
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
-    width: 90%; /* Asegurar que el botón ocupe todo el ancho */
-    box-sizing: border-box; /* Incluir padding en el ancho */
+    width: 90%; 
+    box-sizing: border-box; 
     align-self: center;
 }
 
@@ -212,26 +212,26 @@ main h1{
 }
 
 .accordion-button {
-    background-color:  #ffffff; /* Color de fondo del botón */
-    color: #3A6A9A; /* Color del texto */
-    font-weight: bold; /* Texto en negrita */
-    padding: 15px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color:  #ffffff; 
+    color: #3A6A9A; 
+    font-weight: bold; 
+    padding: 15px; 
+    border-radius: 5px; 
 }
 
 .accordion-button.collapsed {
-    background-color: #3A6A9A; /* Color cuando está colapsado */
+    background-color: #3A6A9A; 
     color: white;
 }
 
 .accordion-body {
-    background-color:  #a8d5e2; /* Color de fondo del contenido */
-    color: #0c0c0c; /* Color del texto */
-    padding: 15px; /* Espaciado interno */
-    border-radius: 0 0 5px 5px; /* Bordes redondeados solo en la parte inferior */
+    background-color:  #a8d5e2; 
+    color: #0c0c0c; 
+    padding: 15px; 
+    border-radius: 0 0 5px 5px; 
 }
 
-/* Asegurar que cada item se expanda correctamente */
+
 .accordion-item {
     width: 100%;
     min-height: auto;
@@ -240,29 +240,29 @@ main h1{
     box-shadow: 0 0 10px #d7d7d7;
 }
 
-/* Contenedor de los acordeones */
+
 .accordion-card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajuste flexible */
-    gap: 20px; /* Espaciado entre acordeones */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px; 
     padding: 10px;
 }
 /*franja de turno*/
 .franja-turno {
-    background-color: #3A6A9A; /* Color de fondo de la franja */
-    padding: 40px 20px; /* Espaciado interno */
-    color: white; /* Color del texto */
+    background-color: #3A6A9A; 
+    padding: 40px 20px; 
+    color: white; 
 }
 .contenido-franja {
-    max-width: 1200px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centrar el contenido */
+    max-width: 1200px; 
+    margin: 0 auto; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px; /* Espacio entre el texto y la imagen */
+    gap: 20px; 
 }
 .texto-franja {
-    flex: 1; /* Ocupa el espacio disponible */
+    flex: 1; 
 }
 .imagen-franja img {
     width: 100%;
@@ -285,7 +285,7 @@ main h1{
 .boton-turno {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #7bff; /* Color naranja para el botón */
+    background-color: #7bff; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -307,20 +307,20 @@ main h1{
 }
 .saber-mas-btn {
     display: inline-block;
-    padding: 10px 20px; /* Espaciado interno */
-    background-color: #007bff; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-decoration: none; /* Quitar subrayado en enlaces */
-    border: none; /* Quitar borde en botones */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 1em; /* Tamaño del texto */
-    cursor: pointer; /* Cambiar el cursor al pasar */
-    transition: background-color 0.3s ease; /* Transición suave */
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: white; 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 5px; /
+    font-size: 1em; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 
 .saber-mas-btn:hover {
-    background-color: #0056b3; /* Cambio de color al pasar el cursor */
+    background-color: #0056b3; 
 }
 
 
@@ -341,16 +341,16 @@ footer .container-fluid {
     text-align: center;
 }
 .iconos{
-    display: flex; /* Activamos Flexbox */
-    justify-content: center; /* Centra los iconos en el eje horizontal */
-    gap: 15px; /* Espacio entre los iconos */
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
     margin-top: 10px; 
 }
 .iconos img{
 
-    width: 30px; /* Tamaño de las imágenes */
-    height: 30px; /* Tamaño de las imágenes */
-    object-fit: cover; /* Asegura que las imágenes mantengan sus proporciones */
+    width: 30px; 
+    height: 30px; 
+    object-fit: cover; 
 }
 
 
@@ -372,12 +372,12 @@ footer .container-fluid {
 }
 
 .que-es{
-    max-width: 1200px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centrar el contenido */
+    max-width: 1200px; 
+    margin: 0 auto; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px; /* Espacio entre el texto y la imagen */
+    gap: 20px; 
 }
 
 
@@ -412,16 +412,16 @@ footer .container-fluid {
 
 .info-card {
     
-        display: flex;              /* Pone las tarjetas en fila */
-        justify-content: center;    /* Centra las tarjetas en la pantalla */
-        gap: 20px;                  /* Espacio entre las tarjetas */
+        display: flex;              
+        justify-content: center;    
+        gap: 20px;                  
     
 }
 .sub-card {
-    width: 30%;                 /* Cada tarjeta ocupa el 30% del ancho */
-    text-align: center;         /* Centra el contenido dentro de la tarjeta */
-    background: #fff;           /* Fondo blanco */
-    padding: 20px;              /* Espaciado interno */
+    width: 30%;                 
+    text-align: center;         
+    background: #fff;           
+    padding: 20px;              
 }
 
 .icono-masaje{
@@ -457,7 +457,7 @@ footer .container-fluid {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 20px; /* Padding alrededor del contenedor */
+    padding: 20px; 
     flex-wrap: wrap;
 }
 .card-contacto {
@@ -485,27 +485,27 @@ footer .container-fluid {
 
 .contenedor {
     display: flex;
-    justify-content: space-between; /* Separa el formulario y el mapa */
-    align-items: stretch; /* Asegura que ambos tengan la misma altura */
-    gap: 20px; /* Espacio entre el formulario y el mapa */
-    padding: 30px; /* Espacio interno */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 1200px; /* Ancho máximo */
-    margin: 0 auto; /* Centra el contenedor */
+    justify-content: space-between; 
+    align-items: stretch; 
+    gap: 20px; 
+    padding: 30px; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 /* Formulario y Mapa */
 .formulario-contacto, .mapa {
-    width: 48%; /* Ancho fijo para ambos (48% para dejar espacio para el gap) */
-    background: #1E3A8A; /* Fondo azul */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    border: 2px solid #000; /* Borde negro */
-    border-radius: 10px; /* Bordes redondeados */
+    width: 48%; 
+    background: #1E3A8A; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 2px solid #000; 
+    border-radius: 10px; 
 }
 
 /* Estilos para el contenido interno */
 .contact-form, .contact-map {
-    padding: 20px; /* Espacio interno */
+    padding: 20px; 
 }
 
 /* Estilos para los inputs y el botón */
@@ -545,9 +545,9 @@ footer .container-fluid {
 }
 .mision-vision {
     display: flex;
-    align-items: stretch; /* Para que tengan la misma altura */
+    align-items: stretch; 
     justify-content: center;
-    flex-wrap: wrap; /* Para que sean responsivas */
+    flex-wrap: wrap; 
     gap: 20px;
     padding: 50px;
 }
@@ -555,26 +555,26 @@ footer .container-fluid {
 
 .mision, .vision {
     text-align: center;
-    width: 300px; /* Más ancho para que se vea mejor */
+    width: 300px; 
     border: 1px solid #c0c0c0;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px #d7d7d7;
-    min-height: 200px; /* Altura mínima para que se vean parejas */
+    min-height: 200px; 
 
 }
 
 /* Ajuste para la sección de filosofía */
-section.fisolosfia, section.instalaciones {
-    max-width: 1100px; /* Limitar ancho para mejor legibilidad */
-    margin: 0 auto; /* Centrar la sección */
-    padding: 20px; /* Espaciado interno */
+section.filosofia, section.instalaciones {
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
 
-section.fisolosfia h2, section.instalaciones h2,
-section.fisolosfia p, section.instalaciones p {
-    text-align: left; /* Centrar los títulos y párrafos */
-    margin-bottom: 20px; /* Espaciado inferior */
+section.filosofia h2, section.instalaciones h2,
+section.filosofia p, section.instalaciones p {
+    text-align: left; 
+    margin-bottom: 20px; 
 }
 
 
@@ -585,37 +585,37 @@ section.fisolosfia p, section.instalaciones p {
     height: 400px;
 }
 #carouselExample {
-    max-width: 1100px; /* Ancho máximo del carrusel */
-    margin: 0 auto; /* Centrar el carrusel */
-    border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden; /* Que las imágenes no se salgan */
+    max-width: 1100px; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    overflow: hidden;  */
 }
 
 .carousel-inner img {
-    height: 500px; /* Altura fija para las imágenes */
-    object-fit: cover; /* Asegurar que la imagen se ajuste bien */
+    height: 500px; 
+    object-fit: cover; 
 }
 
 /*pagina turnos*/
 .container {
     display: flex;           
-    justify-content: center;  /* Centra los elementos dentro del contenedor */
-    align-items: center;      /* Alinea verticalmente */
-    gap: 20px;                /* Espacio entre elementos */
-    max-width: 900px;         /* Controla el ancho total */
-    width: 100%;                  /* Espacio entre elementos */
+    justify-content: center;  
+    align-items: center;      
+    gap: 20px;                
+    max-width: 900px;         
+    width: 100%;                 
 }
 
 .image-container {
-    flex: 1;                     /* Ocupa la mitad del espacio disponible */
+    flex: 1;                     
     display: flex;
-    justify-content: center;      /* Centra la imagen horizontalmente */
+    justify-content: center;      
 }
 
 .image-container img {
-    width: 100%;                 /* Se adapta al contenedor */
-    max-width: 400px;            /* Máximo tamaño */
-    height: auto;                /* Mantiene proporciones */
+    width: 100%;                 
+    max-width: 400px;            
+    height: auto;                
 }
 .formulario-turno {
     background-color: #0764af;
@@ -626,39 +626,18 @@ section.fisolosfia p, section.instalaciones p {
 }
 
 .formulario-turno {
-    flex: 1;                     /* Ocupa la otra mitad */
-    max-width: 700px;            /* Ancho máximo para no estirarse demasiado */
+    flex: 1;                    
+    max-width: 700px;            
 }
 
-/* Media Queries para tablets (768px) */
+* Media Queries para tablets (768px) */
 @media (max-width: 768px) {
-   header {
-        flex-direction: column; /* Coloca el logo y el menú en columna */
-        align-items: flex-start; /* Alinea el menú a la izquierda */
-        padding: 10px 20px;
-    }
-
-    header nav ul {
-        flex-wrap: wrap; /* Permite que los elementos del menú se envuelvan */
-        gap: 10px; /* Espacio entre los elementos del menú */
-    }
-
-    .nav-item .nav-link {
-        padding: 8px 12px; /* Reduce el padding para ahorrar espacio */
-    }
-
-    .logo {
-        margin-bottom: 10px; /* Espacio entre el logo y el menú */
-    }
+    
+    
     
     .card-container{
         background-image: none;
-        background: #007bff;
-    }
-
- 
-    .blog-container {
-        grid-template-columns: 1fr;
+    
     }
 
     .accordion-card {
@@ -667,14 +646,14 @@ section.fisolosfia p, section.instalaciones p {
     }
     /*Pagina contacto*/
     .formulario {
-        gap: 15px; /* Reducir el espacio entre las tarjetas */
-        padding: 20px 10px; /* Añadir margen a los lados */
+        gap: 15px; 
+        padding: 20px 10px; 
     }
 
     .card-contacto {
-        width: 45%; /* Ancho relativo para que las tarjetas se ajusten mejor */
-        max-width: 300px; /* Ancho máximo de las tarjetas */
-        padding: 15px; /* Reducir el padding de las tarjetas */
+        width: 45%; 
+        max-width: 300px; 
+        padding: 15px; 
     }
     }
 
@@ -682,31 +661,31 @@ section.fisolosfia p, section.instalaciones p {
 /* Media Queries para móviles (320px) */
 @media (max-width: 480px) {
     body {
-        margin-right: 10px; /* Ajusta este valor según sea necesario */
+        margin-right: 10px; 
     }
     header {
-        flex-direction: column; /* Logo arriba, menú debajo */
+        flex-direction: column; 
         align-items: center;
         padding: 5px;
     }
     .nav {
-        flex-direction: column; /* Menú vertical */
+        flex-direction: column; 
         align-items: center;
-        margin-top: 10px; /* Espacio entre el logo y el menú */
+        margin-top: 10px; 
     }
 
     .menu li {
-        margin: 5px 0; /* Espacio entre elementos del menú */
+        margin: 5px 0; 
     }
     main h1 {
         font-size: 32px;
     }
 
     .logo img {
-        max-width: 80px; /* Reducir el tamaño del logo en móviles */
+        max-width: 80px; 
     }
 
-   
+
     .card-imagenes {
         flex-direction: column;
         
@@ -733,21 +712,21 @@ section.fisolosfia p, section.instalaciones p {
    
     /*Pagina quiropraxia*/
     .que-es {
-        flex-direction: column; /* Apilar imagen y texto verticalmente */
-        text-align: center; /* Centrar el texto */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     .imagen- img {
-        display: none; /* Ocultar la imagen en móviles */
+        display: none; 
     }
     .sub-card {
         display: none;
     }
     /*Pagina Contactos*/
     .card-contacto {
-        width: 100%; /* Haz que las tarjetas ocupen el ancho completo */
-        max-width: 280px; /* Establece un ancho máximo para las tarjetas */
-        margin: 10px 0; /* Añade un margen arriba y abajo para separar las tarjetas */
+        width: 100%; 
+        max-width: 280px; /
+        margin: 10px 0; 
     }
     .formulario{ 
         flex-direction: column;
@@ -761,12 +740,11 @@ section.fisolosfia p, section.instalaciones p {
     .formulario-contacto, .mapa {
         width: 100%;
     }
-   
- 
+
 
     /*nostros*/
     #carouselExample {
-        display: none; /* Oculta el carrusel en móviles */
+        display: none; 
     }
     /*turnos*/
     .image-container{
@@ -774,9 +752,6 @@ section.fisolosfia p, section.instalaciones p {
     }
 }
 
-   
 
-    
-}
 
 
