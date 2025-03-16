@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header> 
-        <div >
+    <header id="header"> 
+        <div class="logo">
             <img src="/assets/img/logo-2.jpg" alt="logo">
         </div>
         <nav>
@@ -31,7 +31,7 @@
                 <a class="nav-link " href="./pages/nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item menu">
-                <a class="nav-link " href="./pages/turno.hmtl">Turnos</a>
+                    <a class="nav-link " href="./pages/turnos.html">Turnos</a>
                 </li>
             </ul>
 
@@ -40,7 +40,7 @@
 
 
 
-    <main>
+    <main id="main">
         
         <h1>Consultorio Quiropráctico y de Medicina China</h1>
         
@@ -57,24 +57,36 @@
                 
                 Descubrí una nueva forma de cuidar tu cuerpo y conectar con tu esencia. Tu bienestar es nuestra prioridad, y estamos aquí para guiarte en cada paso hacia una vida más plena, saludable y en armonía. </p>
         </div>
-        <section class="card-imagenes">
-
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/img/terapia.jpg" class="card-img-top" alt="terapia">
-                <div class="card-body">
-                <p class="card-text">"Bienvenido a un espacio diseñado para tu relajación y recuperación."</p>
+        <section class="card-imagenes container">
+            <div class="row">
+                <!-- Primera tarjeta (ocupa 12 columnas en pantallas medianas) -->
+                <div class="col-12 col-md-12 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/img/terapia.jpg" class="card-img-top" alt="terapia">
+                        <div class="card-body">
+                            <p class="card-text">"Bienvenido a un espacio diseñado para tu relajación y recuperación."</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/img/masaje.jpg" class="card-img-top" alt="masaje">
-                <div class="card-body">
-                <p class="card-text">Técnicas precisas para aliviar el dolor y mejorar tu movilidad."</p>
+        
+                <!-- Segunda tarjeta (ocupa 6 columnas en pantallas medianas) -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/img/masaje.jpg" class="card-img-top" alt="masaje">
+                        <div class="card-body">
+                            <p class="card-text">"Técnicas precisas para aliviar el dolor y mejorar tu movilidad."</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/img/saumerios.jpg" class="card-img-top" alt="saumerios">
-                <div class="card-body">
-                <p class="card-text">"Armoniza tu energía vital con terapias milenarias."</p>
+        
+                <!-- Tercera tarjeta (ocupa 6 columnas en pantallas medianas) -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/img/saumerios.jpg" class="card-img-top" alt="saumerios">
+                        <div class="card-body">
+                            <p class="card-text">"Armoniza tu energía vital con terapias milenarias."</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -102,13 +114,14 @@
             <p>Aprendé a controlar la respiración para disminuir la ansiedad, mejorar tu energía y potenciar tu bienestar diario.</p>
             <a href="https://es.wikipedia.org/wiki/Anapanasati" class="read-more" target="_blank">Leer más</a>
         </div>
-
         <div class="blog-card">
-            <h3>Cómo prepararte para tu primera sesión de quiropraxia</h3>
-            <p>Descubrí qué esperar en tu primera visita al quiropráctico y cómo prepararte para aprovechar al máximo tu sesión.</p>
+            <h3>Tu primera sesión de quiropraxia</h3>
+            <p>Descubrí qué esperar en tu primera visita al quiropráctico y cómo prepararte para aprovechar al máximo tu sesión de quiripractica y medicina china.</p>
             <a href="https://www.youtube.com/watch?v=_sXeMeMojnk" class="read-more" target="_blank">Leer más</a>
         </div>
+
     </div>
+
 </section>
 
         <!--Acordiones-->
@@ -206,12 +219,13 @@
         <div class="texto-franja">
             <h2>¿Necesitás atención personalizada?</h2>
             <p>En nuestro consultorio, te ofrecemos tratamientos quiroprácticos y de medicina china adaptados a tus necesidades. ¡No esperes más para sentirte mejor!</p>
-            <a href="turnos.html" class="boton-turno">Saca tu turno aquí</a>
+            <a href="./pages/turnos.html" class="boton-turno">Saca tu turno aquí</a>
         </div>
+        
         <div class="imagen-franja">
             <img src="./assets/img/turnos.jpg" alt="Consulta quiropráctica">
         </div>
-    </div>
+    
 </section>
 
 <section class="saber-mas">
@@ -234,7 +248,7 @@
 
 <!-- footer -->
     
-    <footer class="py-4">
+    <footer id="footer" class="py-4">
     <div class="container-fluid">
         <div class="row">
             <!-- Información de contacto -->
@@ -247,9 +261,9 @@
             <div class="col-md-4">
                 <h5>Enlaces rápidos</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="">Inicio</a></li>
-                    <li><a href="#servicio" class="">Servicios</a></li>
-                    <li><a href="./pages/contactos.html" class="">Contacto</a></li>
+                    <li><a href="../index.html" class="">Inicio</a></li>
+                    <li><a href="../#servicios"class="">Servicios</a></li>
+                    <li><a href="../pages/contactos.html" class="">Contacto</a></li>
                 </ul>
             </div>
             <!-- Redes sociales -->
@@ -257,9 +271,9 @@
                 <h5>Síguenos</h5>
                 <div class="iconos">
 
-                    <a href="#" class="text-white me-3"><img class="iconos" src="/assets/img/facebook.png" alt="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="text-white me-3"><img class="iconos" src="/assets/img/instagram.png" alt="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-white me-3"><img class="iconos" src="/assets/img/whatsapp.png" alt="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100063806080399" target="_blank" rel="noopener noreferrer" class="text-white me-3"><img class="iconos" src="/assets/img/facebook.png" alt="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/consult_quiropractico/" target="_blank" rel="noopener noreferrer" class="text-white me-3"><img class="iconos" src="/assets/img/instagram.png" alt="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://wa.me/542615632792" target="_blank" rel="noopener noreferrer" class="text-white me-3"><img class="iconos" src="/assets/img/whatsapp.png" alt="whatsapp"><i class="bi bi-whatsapp"></i></a>
                     
                 </div>
             </div>

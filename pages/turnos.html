@@ -17,64 +17,78 @@
         <nav>
             <ul class="nav nav-tabs ">
                 <li class="nav-item menu">
-                    <a class="nav-link active" aria-current="page" href="./pages/">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item menu">
-                    <a class="nav-link active" aria-current="page" href="./pages/quiropractica.html">Quiropractica</a>
+                    <a class="nav-link active" aria-current="page" href="../pages/quiropractica.html">Quiropractica</a>
                 </li>
                 <li class="nav-item menu">
-                <a class="nav-link"  href="#servicios.html">Servicios</a>
+                    <a class="nav-link" href="../#servicios">Servicios</a>
                 </li>
                 <li class="nav-item menu">
-                <a class="nav-link "  href="./pages/contactos.html">Contactos</a>
+                <a class="nav-link "  href="../pages/contactos.html">Contactos</a>
                 </li>
                 <li class="nav-item menu">
-                <a class="nav-link " href="nosotros.html">Nosotros</a>
+                <a class="nav-link " href="../pages/nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item menu">
-                <a class="nav-link" herf="turnos.html">Turnos</a>
+                    <a class="nav-link " href="../pages/turnos.html">Turnos</a>
                 </li>
             </ul>
 
         </nav>
     </header>
     <main>
+
+        <h1 class="text-center">Reserva tu turno</h1>
         <div class="container mt-5">
-            <h1 class="text-center">Reserva tu turno</h1>
-            <form id="appointmentForm" class="mt-4">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre y Apellido</label>
-                    <input type="text" class="form-control" id="name" required>
+            <div class="row align-items-center">
+                <!-- Columna del formulario -->
+                <div class="col-md-6">
+                    <form id="appointmentForm" class="mt-4 formulario-turno">
+                        <div class="mb-3 casillero">
+                            <label for="name" class="form-label">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3 casillero">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3 casillero">
+                            <label for="phone" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3 casillero">
+                            <label for="date" class="form-label">Selecciona la fecha</label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="mb-3 casillero">
+                            <label for="time" class="form-label">Selecciona la hora</label>
+                            <input type="time" class="form-control" id="time" required>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100 casillero" onclick="bookAppointment()">Reservar turno</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Correo Electronico</label>
-                    <input type="text" class="form-control" id="name" required>
+    
+                <!-- Columna de la imagen -->
+                <div class="image-container">
+                    <img src="/assets/img/turnos-horarios.jpg" alt="Horarios" class="img-fluid">
                 </div>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Telefono</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="date" class="form-label">Selecciona la fecha</label>
-                    <input type="date" class="form-control" id="date" required>
-                </div>
-                <div class="mb-3">
-                    <label for="time" class="form-label">Selecciona la hora</label>
-                    <input type="time" class="form-control" id="time" required>
-                </div>
-                <button type="button" class="btn btn-primary w-100" onclick="bookAppointment()">Reservar turno</button>
-            </form>
+            </div>
         </div>
+    </main>
     
         <script>
             function bookAppointment() {
                 const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
                 const date = document.getElementById('date').value;
                 const time = document.getElementById('time').value;
-                
-                if (name && date && time) {
-                    const message = `Hola, quiero reservar un turno para ${name} el ${date} a las ${time}.`;
-                    const whatsappURL = `https://wa.me/549XXXXXXXXXX?text=${encodeURIComponent(message)}`;
+    
+                if (name && email && phone && date && time) {
+                    const message = `Hola, quiero reservar un turno para ${name} el ${date} a las ${time}. Mi correo es ${email} y mi teléfono es ${phone}.`;
+                    const whatsappURL = `https://wa.me/542615632792?text=${encodeURIComponent(message)}`;
                     window.open(whatsappURL, '_blank');
                 } else {
                     alert('Por favor, completa todos los campos.');
@@ -96,9 +110,9 @@
                     <div class="col-md-4">
                         <h5>Enlaces rápidos</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="">Inicio</a></li>
-                            <li><a href="#servicio" class="">Servicios</a></li>
-                            <li><a href="./pages/contactos.html" class="">Contacto</a></li>
+                            <li><a href="../index.html" class="">Inicio</a></li>
+                            <li><a href="../#servicios"class="">Servicios</a></li>
+                            <li><a href="../pages/contactos.html" class="">Contacto</a></li>
                         </ul>
                     </div>
                     <!-- Redes sociales -->
@@ -106,9 +120,9 @@
                         <h5>Síguenos</h5>
                         <div class="iconos">
         
-                            <a href="#" class="text-white me-3"><img class="iconos" src="/assets/img/facebook.png" alt="facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="text-white me-3"><img class="iconos" src="/assets/img/instagram.png" alt="instagram"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white me-3"><img class="iconos" src="/assets/img/whatsapp.png" alt="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100063806080399" target="_blank" rel="noopener noreferrer" class="text-white me-3"><img class="iconos" src="/assets/img/facebook.png" alt="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/consult_quiropractico/" target="_blank" rel="noopener noreferrer" class="text-white me-3"><img class="iconos" src="/assets/img/instagram.png" alt="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="https://wa.me/542615632792" target="_blank" rel="noopener noreferrer" class="text-white me-3"><img class="iconos" src="/assets/img/whatsapp.png" alt="whatsapp"><i class="bi bi-whatsapp"></i></a>
                             
                         </div>
                     </div>
