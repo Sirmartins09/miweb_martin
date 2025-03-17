@@ -632,13 +632,7 @@ section.filosofia p, section.instalaciones p {
 
 * Media Queries para tablets (768px) */
 @media (max-width: 768px) {
-    
-    
-    
-    /* .card-container{
-        background-image: none;
-    
-    } */
+
 
     .accordion-card {
         grid-template-columns: 1fr;
