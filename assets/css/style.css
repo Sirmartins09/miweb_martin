@@ -108,7 +108,7 @@ main h1{
 }
 /*acordeo*/
 .card-container{
-    background-image: url(' https://sirmartins09.github.io/miweb_martin/assets/img/main.jpeg');
+    background-image: url('../img/main.jpeg');
     background-size: auto;              
     background-position: right;
     background-repeat: no-repeat;                 
@@ -359,7 +359,7 @@ footer .container-fluid {
 .info-seccion {
     position: relative;
     height: 100vh;
-    background: url('../img/main.jpeg') no-repeat center center/cover;
+    background: url('../img/quiropractica.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
