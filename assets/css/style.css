@@ -635,10 +635,10 @@ section.filosofia p, section.instalaciones p {
     
     
     
-    .card-container{
+    /* .card-container{
         background-image: none;
     
-    }
+    } */
 
     .accordion-card {
         grid-template-columns: 1fr;
