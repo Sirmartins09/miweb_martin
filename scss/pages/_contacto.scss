@@ -1,0 +1,70 @@
+/*Pagina contactos*/
+@use 'sass:map';
+@use '../utilities/maps' as *;
+.formulario {
+    display: flex;
+    justify-content: map.get($flex,justificacion);
+    align-items: map.get($flex,alineacion);
+    gap: 20px;
+    padding: 20px; 
+    flex-wrap: wrap;
+    cursor: pointer;
+    .card-contacto {
+        display: flex;
+        align-items: map.get($flex,alineacion);
+        justify-content: map.get($flex,justificacion);
+        flex-direction: map.get($flex,direccion);
+        text-align: center;
+        padding: 20px;
+        background-color: #1E3A8A;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        
+        .contenido {
+            display: flex;
+            flex-direction:map.get($flex,direccion);
+            align-items: map.get($flex,alineacion);
+            gap: 10px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        
+    }
+
+}
+
+
+
+.contenedor {
+    display: flex;
+    justify-content: map.get($flex,entre);
+    align-items: stretch; 
+    gap: 20px; 
+    padding: 30px; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    .formulario-contacto, .mapa {
+        width: 48%; 
+        background: #1E3A8A; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        border: 2px solid #000; 
+        border-radius: 10px; 
+        .contact-form, .contact-map {
+            padding: 20px; 
+            .form-control {
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+        }
+    }
+}
+
+
+
+
+

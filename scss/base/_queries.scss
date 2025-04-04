@@ -1,0 +1,182 @@
+/*Media Queries para tablets (768px)*/
+@media (max-width: 768px) {
+    header {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    }
+
+    .nav {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    }
+
+    .blog-container {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    }
+
+    .blog-card {
+    width: 90%;
+    max-width: 100%;
+    }
+
+    .accordion-card {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    }
+
+    .franja-turno {
+    .contenido-franja {
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+    }
+    }
+
+    .texto-franja {
+    padding: 20px;
+    }
+
+    .imagen-franja {
+    img {
+        max-width: 100%;
+        width: 50%;
+    }
+    }
+
+    .contenido-mas {
+    p {
+        padding: 30px;
+    }
+    }
+
+    /* Pagina contacto */
+    .formulario {
+    gap: 15px;
+    padding: 20px 10px;
+    }
+
+    .card-contacto {
+    width: 45%;
+    max-width: 300px;
+    padding: 15px;
+    }
+
+    .col-md-4 {
+    p {
+        margin: 20px;
+    }
+    }
+}
+
+  /* Media Queries para móviles (320px - 480px) */
+@media (max-width: 480px) {
+    body {
+    margin-right: 10px;
+    }
+
+    header {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    }
+
+    .nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    }
+
+    main {
+    h1 {
+        font-size: 32px;
+    }
+    }
+
+    .logo {
+    img {
+        max-width: 80px;
+    }
+    }
+
+    .card-imagenes {
+    flex-direction: column;
+    }
+
+    .blog-container {
+    grid-template-columns: 1fr;
+    max-width: 95%;
+    }
+
+    .blog-card {
+    width: 95%;
+    }
+
+    .card-container {
+    .accordion-card {
+        grid-template-columns: 1fr;
+    }
+    }
+
+    .franja-turno {
+    .contenido-franja {
+        flex-direction: column;
+        text-align: center;
+    }
+    }
+
+    .imagen-franja {
+    img {
+        max-width: 100%;
+    }
+    }
+
+    .contenedor {
+    flex-direction: column;
+    align-items: center;
+
+    .formulario-contacto,
+    .mapa {
+        width: 100%;
+    }
+    }
+
+    .contact-form {
+    max-width: 800px;
+    }
+
+    /* Página Quiropraxia */
+    .que-es,
+    .que-es2 {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .que-es2 {
+    img {
+        max-width: 320px;
+    }
+    }
+
+    .que-es {
+    .imagen {
+        display: none; // Ocultar imagen de consulta.png
+    }
+    }
+
+    .sub-card {
+    display: none;
+    }
+
+    /* Página Nosotros */
+    #carouselExample {
+    display: none;
+    }
+
+    /* Página Turnos */
+    .image-container {
+    padding: 20px;
+    }
+}

@@ -1,0 +1,23 @@
+@mixin estilos-card($gradient, $border-radius, $box-shadow, $transition) {
+    background: $gradient;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    transition: $transition;
+    padding: 20px;
+    text-align: center;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+.mision, 
+.vision {
+    @include estilos-card(
+        linear-gradient(135deg, #578FCA, #a8d5e2), 
+        10px, 
+        0 2px 10px rgba(0, 0, 0, 0.1), 
+        all 0.3s ease-in-out
+    );
+}
+

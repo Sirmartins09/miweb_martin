@@ -1,0 +1,51 @@
+@use 'sass:map';
+// $flex: (
+//     "center": (
+//     align-items: center,
+//     justify-content: center,
+// ),
+//     "espacio-entre": (
+//     align-items: center,
+//     justify-content: space-between
+// ),
+//     "columna-center": (
+//     flex-direction: column,
+//     align-items: center,
+//     justify-content: center
+// )
+// );
+
+// @each $name, $estilos in $flex{
+//     .flex-#{$name} { 
+//       display: flex;
+  
+//       @each $clave, $valor in $estilos {
+//         #{$clave}: $valor;
+//       }
+//     }
+//   }
+
+$flex: (
+  alineacion: center,
+  justificacion: center,
+  direccion: column,
+  entre: space-between
+);
+
+$titulos: (
+  h1: (size: 32px, weight: bold, line-height: 40px,),
+  h2: (size: 28px, weight: bold, line-height: 36px,),
+  h3: (size: 24px, weight: normal, line-height: 32px,),
+  h4: (size: 20px, weight: normal, line-height: 28px,),
+  h5: (size: 18px, weight: normal, line-height: 24px,)
+  
+);
+@each $titulo, $valores in $titulos {
+  #{$titulo} {
+    font-size: map.get($valores, size);
+    font-weight: map.get($valores, weight);
+    line-height: map.get($valores, line-height);
+    
+
+  }
+}

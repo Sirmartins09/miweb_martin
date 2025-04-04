@@ -1,0 +1,39 @@
+@use "../base/variables" as *;
+@use 'sass:map';
+@use '../utilities/maps' as *;
+footer{
+    background-color: $fondo-footer;
+    color: #adb5bd;
+    padding: 20px 0;
+}
+footer .container-fluid {
+    text-align: center;
+}
+.list-unstyled {
+    a {
+        text-decoration: none;
+        color: #adb5bd;
+        display: inline-block;
+        transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateX(5px);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+.redes{
+    text-align: center;
+}
+.iconos{
+    display: flex; 
+    justify-content:map.get($flex,justificacion); 
+    gap: 15px; 
+    margin-top: 10px; 
+}
+.iconos img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin: 5px; 
+}

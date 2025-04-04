@@ -1,0 +1,204 @@
+@use "../base/variables" as *;
+@use 'sass:map';
+@use '../utilities/maps' as *;
+@use '../utilities/mixin' as *;
+
+main {
+    padding: 50px 0; 
+    background-color: $fondo-main;
+
+    h1 {
+        text-align: center;
+        padding: 10px 50px;
+    }
+
+    .youtube-icon {
+        display: flex;
+        align-items: map.get($flex, alineacion);
+        justify-content: map.get($flex, justificacion);
+        font-size: 30px;
+        color: #ffffff;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: color 0.3s ease;
+        gap: 10px;
+
+        &:hover {
+            color: #3c4741;
+        }
+    }
+
+    .bienvenido {
+        text-align: center;
+        padding: 50px 60px;
+        color: #ffffff;
+    }
+
+    .card-imagenes {
+        display: flex;
+        align-items: map.get($flex, alineacion);
+        justify-content: map.get($flex, justificacion);
+    }
+
+    .card-body {
+        background-color: #e6f7ff;
+        border-radius: 0 0 10px 10px;
+        padding: 15px;
+
+        .card-text {
+            text-align: center;
+            color: #333;
+            margin: 0;
+        }
+    }
+}
+
+.blog {
+    padding: 20px;
+}
+   
+
+    .titulo-blog {
+        text-align: center;
+        padding: 30px;
+        margin: 20px 0;
+        color: white;
+    }
+
+    .blog-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+
+
+    .blog-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        background: linear-gradient(135deg, #578FCA, #a8d5e2);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+        height: auto;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+    }
+}
+
+.card-container {
+    background-image: url('../img/main.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border: 2px solid #ccc;
+
+    #servicios {
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+
+    .accordion-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 10px;
+        justify-content: center;
+        max-width: 90%;
+        margin: 0 auto;
+
+    }
+}
+
+.accordion {
+    &-button {
+        background-color: #ffffff;
+        color: #3A6A9A;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 5px;
+
+        &.collapsed {
+            background-color: #3A6A9A;
+            color: white;
+        }
+    }
+
+    &-body {
+        background-color: #a8d5e2;
+        color: #0c0c0c;
+        padding: 15px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    &-item {
+        width: 100%;
+        min-height: auto;
+        border: 1px solid #c0c0c0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #d7d7d7;
+    }
+}
+
+.franja-turno {
+    background-color: #3A6A9A;
+    padding: 40px 20px;
+
+    .contenido-franja {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: map.get($flex, alineacion);
+        justify-content: map.get($flex, entre);
+        gap: 20px;
+    }
+
+    .texto-franja {
+        flex: 1;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #0c0c0c;
+        }
+    }
+   
+}
+
+.saber-mas {
+    display: flex;
+    text-align: center;
+    align-items: map.get($flex, alineacion);
+    justify-content: map.get($flex, justificacion);
+    margin-top: 30px;
+
+    .contenido-mas {
+        padding: 30px;
+
+        h2 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #0c0c0c;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@use 'sass:map';
+@use '../utilities/maps' as *;
+.info-seccion {
+    position: relative;
+    height: 100vh;
+    background: url('../img/quiropractica.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: map.get($flex,alineacion);
+    justify-content: map.get($flex,justificacion);
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+    .info-contenido {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+    }
+}
+
+.que-es {
+    text-align: left;
+    display: flex;
+    align-items: map.get($flex,alineacion);
+    justify-content: map.get($flex,entre);
+    gap: 20px;
+    margin: 20px;
+    padding: 25px 
+    
+}
+.que-es2 {
+    text-align: right;
+    @extend .que-es; 
+
+}
+
+.subluxaciones {
+    background: #ffffff;
+    padding: 30px;
+    text-align: center;
+
+    .apartado {
+        text-align: center;
+        padding: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 28px;
+            color: #ca510a;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    .info-card {
+        display: flex;
+        justify-content: map.get($flex,justificacion);
+        gap: 20px;
+
+        .sub-card {
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+}
+
+.icono-masaje {
+    padding: 20px;
+}
+
+.cierre {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+
+    h2 {
+        
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #000000;
+        line-height: 1.6;
+        margin: 0 auto 20px;
+    }
+}

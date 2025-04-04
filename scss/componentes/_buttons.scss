@@ -1,0 +1,81 @@
+@use "../base/variables" as *;
+
+/* leer mas*/
+.read-more {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 20px;
+    background:$fondo-botones;
+    color: $letras-botones;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%; 
+    box-sizing: border-box; 
+    align-self: center;
+    transition: background-color $transicion-botones;
+    &:hover {
+        background: $hover_botones;
+    }
+
+}
+
+
+
+/*sacar turno main*/
+
+.boton-turno {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:$fondo-botones; 
+    color:$letras-botones;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color $transicion-botones;
+    &:hover {
+        background: $hover_botones;
+    }
+}
+
+
+/*saber mas*/
+.saber-mas-btn {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color:$fondo-botones; 
+    color: $letras-botones; 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color $transicion-botones;
+    &:hover {
+        background-color: $hover_botones; 
+    }
+
+}
+
+
+
+/*reservar turno */
+.btn {
+    background-color:$fondo-botones; 
+    color: $letras-botones;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color $transicion-botones;
+    &hover{
+        background-color: $hover_botones;
+    }
+}
+    /*boton contacto*/
+    .btn-contacto{
+    @extend.btn;
+    transition: background-color $transicion-botones;
+    &:hover{
+        background-color: $hover_botones;
+    }
+    }
