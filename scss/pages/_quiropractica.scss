@@ -3,10 +3,10 @@
 .info-seccion {
     position: relative;
     height: 100vh;
-    background: url('/miweb_martin/img/quiropractica.jpg') no-repeat center center/cover;
+    background: url('../img/quiropractica.jpg') no-repeat center center/cover;
     display: flex;
-    align-items: center; // Asumimos que querés centrar verticalmente
-    justify-content: center; // Centrado horizontal
+    align-items: center; 
+    justify-content: center; 
     text-align: center;
     color: white;
     padding: 20px;
