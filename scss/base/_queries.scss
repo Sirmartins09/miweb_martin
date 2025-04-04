@@ -73,9 +73,7 @@
 
   /* Media Queries para móviles (320px - 480px) */
 @media (max-width: 480px) {
-    body {
-    margin-right: 10px;
-    }
+    
 
     header {
     flex-direction: column;
@@ -111,7 +109,9 @@
     }
 
     .blog-card {
-    width: 95%;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
     }
 
     .card-container {
@@ -144,10 +144,15 @@
     }
 
     .contact-form {
-    max-width: 800px;
+        max-width: 100%;
+        padding: 10px;
     }
 
     /* Página Quiropraxia */
+    .info-contenido h1{
+        text-align: center;
+        padding: 10px;
+    }
     .que-es,
     .que-es2 {
     flex-direction: column;
