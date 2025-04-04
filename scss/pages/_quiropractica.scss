@@ -2,7 +2,8 @@
 @use '../utilities/maps' as *;
 .info-seccion {
     position: relative;
-    background: url('../img/quiropractica.jpg') no-repeat center center/cover;
+    height: 100vh;
+    background: url('/assets/img/quiropractica.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center; 
     justify-content: center; 
