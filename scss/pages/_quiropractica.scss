@@ -3,45 +3,20 @@
 .info-seccion {
     position: relative;
     height: 100vh;
-    background: url('/assets/img/quiropractica.jpg') no-repeat center center/cover;
+    background: url('../img/quiropractica.jpg') no-repeat center center/cover;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: map.get($flex,alineacion);
+    justify-content: map.get($flex,justificacion);
     text-align: center;
     color: white;
     padding: 20px;
-  
-    // Animación suave de entrada
-    animation: aparecer 1.5s ease-in-out;
-  
+
     .info-contenido {
-      background: rgba(0, 0, 0, 0.5); // Fondo semitransparente para legibilidad
-      padding: 30px;
-      border-radius: 12px;
-  
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 10px;
-      }
-  
-      p {
-        font-size: 1.2rem;
-      }
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
     }
-  }
-  
-  // Animación keyframes
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}
+
 .que-es {
     text-align: left;
     display: flex;
