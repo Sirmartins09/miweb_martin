@@ -10,10 +10,32 @@ html, body {
   box-sizing: border-box;
 }
 
+.site-header {
+  background-color: #3674B5;
+}
+
+.main {
+  background-color: hsl(211, 52%, 57%);
+}
+
+.py-4 {
+  background-color: #3A6A9A;
+}
+
+.franja-turno {
+  background-color: #3A6A9A;
+}
+
+.subluxaciones {
+  background-color: #ffffff;
+}
+
+.franja-nosotros {
+  background-color: rgb(167, 164, 164);
+}
 
 /* Estilos generales del header */
 .site-header {
-  background-color: #3674B5;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,30 +66,6 @@ nav ul {
 
 .nav-item .nav-link:hover {
   color: #baeb0b;
-}
-
-.header {
-  background-color: #3674B5;
-}
-
-.main {
-  background-color: #578FCA;
-}
-
-.py-4 {
-  background-color: #3A6A9A;
-}
-
-.franja-turnos {
-  background-color: #3A6A9A;
-}
-
-.subluxacion {
-  background-color: #ffffff;
-}
-
-.franja-nosotros {
-  background-color: rgb(167, 164, 164);
 }
 
 .py-4 {
@@ -190,7 +188,6 @@ nav ul {
 
 main {
   padding: 50px 0;
-  background-color: #578FCA;
 }
 main h1 {
   text-align: center;
@@ -339,7 +336,6 @@ main .card-body .card-text {
 }
 
 .franja-turno {
-  background-color: #3A6A9A;
   padding: 40px 20px;
 }
 .franja-turno .contenido-franja {
@@ -447,9 +443,6 @@ main .card-body .card-text {
 }
 
 /*pagina nosotros*/
-.franja-nosotros {
-  background-color: rgb(167, 164, 164);
-}
 .franja-nosotros .nosotros {
   text-align: left;
   padding: 20px;
@@ -573,7 +566,6 @@ section.filosofia h2, section.instalaciones h2 {
 }
 
 .subluxaciones {
-  background: #ffffff;
   padding: 30px;
   text-align: center;
 }

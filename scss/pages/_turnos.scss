@@ -1,8 +1,12 @@
+@use '../utilities/mixin' as mixin;
 /*pagina turnos*/
 .text-center{
     text-align: center;
     margin-top: 50px;
-}
+    h1{
+        @include mixin.titulo(32px, bold, 40px, #ffff)
+    }
+    }
 .container {
     display: flex;           
     justify-content: center;  

@@ -1,27 +1,34 @@
 @use "../base/variables" as *;
 @use 'sass:map';
 @use '../utilities/maps' as *;
-footer{
-    background-color: $fondo-footer;
-    color: #adb5bd;
-    padding: 20px 0;
-}
-footer .container-fluid {
-    text-align: center;
-}
-.list-unstyled {
-    a {
-        text-decoration: none;
-        color: #adb5bd;
-        display: inline-block;
-        transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+@use '../utilities/mixin' as mixin;
 
-        &:hover {
-            transform: translateX(5px);
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+.py-4{
+    padding: 20px 0;
+    color: #adb5db;
+    .container-fluid {
+        text-align: center;
+    }
+}
+
+.col-md-4{
+    h5{ @include mixin.titulo(18px, normal, 24px, #ffffff);}
+    .list-unstyled {
+        a {
+            color: #adb5db;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    
+            &:hover {
+                transform: translateX(5px);
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            }
         }
     }
 }
+
 .redes{
     text-align: center;
 }

@@ -1,29 +1,14 @@
 @use 'sass:map';
-// $flex: (
-//     "center": (
-//     align-items: center,
-//     justify-content: center,
-// ),
-//     "espacio-entre": (
-//     align-items: center,
-//     justify-content: space-between
-// ),
-//     "columna-center": (
-//     flex-direction: column,
-//     align-items: center,
-//     justify-content: center
-// )
-// );
-
-// @each $name, $estilos in $flex{
-//     .flex-#{$name} { 
-//       display: flex;
-  
-//       @each $clave, $valor in $estilos {
-//         #{$clave}: $valor;
-//       }
-//     }
-//   }
+$botones:(
+    fondo-botones:#77bbff,
+    letras-boton:#ffffff,
+    hover-boton:#0056b3,
+    borde-botones:none,
+    borde-radius:10px,
+    transicion-boton:background-color 0.3s ease,
+    size-boton:16px,
+    padding-boton: 10px 20px
+);
 
 $flex: (
   alineacion: center,
@@ -32,20 +17,12 @@ $flex: (
   entre: space-between
 );
 
-$titulos: (
-  h1: (size: 32px, weight: bold, line-height: 40px,),
-  h2: (size: 28px, weight: bold, line-height: 36px,),
-  h3: (size: 24px, weight: normal, line-height: 32px,),
-  h4: (size: 20px, weight: normal, line-height: 28px,),
-  h5: (size: 18px, weight: normal, line-height: 24px,)
-  
-);
-@each $titulo, $valores in $titulos {
-  #{$titulo} {
-    font-size: map.get($valores, size);
-    font-weight: map.get($valores, weight);
-    line-height: map.get($valores, line-height);
-    
+$fondos: (
+  site-header:#3674B5,
+  main:hsl(211, 52%, 57%),
+  py-4:#3A6A9A,
+  franja-turno: #3A6A9A,
+  subluxaciones:#ffffff,
+  franja-nosotros:rgb(167, 164, 164)
 
-  }
-}
+);

@@ -1,0 +1,7 @@
+@use 'maps' as *;
+
+@each $clase, $color in $fondos {
+  .#{$clase} {
+    background-color: $color;
+  }
+}

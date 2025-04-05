@@ -1,10 +1,9 @@
 /* Estilos generales del header */
-@use "../base/variables" as *;
+
 @use 'sass:map';
 @use '../utilities/maps' as *;
 
 .site-header {
-    background-color:$fondo-header;
     display: flex;
     align-items:map.get($flex,alineacion);
     justify-content: map.get($flex,entre);

@@ -1,21 +1,25 @@
 @use "../base/variables" as *;
+@use 'sass:map';
+@use '../utilities/maps' as *;
 
 /* leer mas*/
 .read-more {
     display: inline-block;
     margin-top: auto;
-    padding: 10px 20px;
-    background:$fondo-botones;
-    color: $letras-botones;
+    padding: map.get($botones, padding-boton);
+    background:map.get($botones, fondo-botones);
+    color: map.get($botones, letras-boton);
     text-decoration: none;
-    border-radius: 5px;
+    border: map.get($botones, borde-botones);
+    border-radius: map.get($botones, borde-radius);
+    font-size: map.get($botones,  size-boton);
     text-align: center;
     width: 90%; 
     box-sizing: border-box; 
     align-self: center;
-    transition: background-color $transicion-botones;
+    transition: map.get($botones, transicion-boton);
     &:hover {
-        background: $hover_botones;
+        background: map.get($botones, hover-boton);
     }
 
 }
@@ -26,15 +30,16 @@
 
 .boton-turno {
     display: inline-block;
-    padding: 10px 20px;
-    background-color:$fondo-botones; 
-    color:$letras-botones;
+    padding: map.get($botones, padding-boton);
+    background-color: map.get($botones, fondo-botones);
+    color: map.get($botones, letras-boton);
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color $transicion-botones;
+    border:map.get($botones, borde-botones);
+    border-radius: map.get($botones, borde-radius);
+    font-size: map.get($botones,  size-boton);
+    transition: map.get($botones, transicion-boton);
     &:hover {
-        background: $hover_botones;
+        background:map.get($botones,hover-boton);
     }
 }
 
@@ -42,16 +47,16 @@
 /*saber mas*/
 .saber-mas-btn {
     display: inline-block;
-    padding: 10px 20px; 
-    background-color:$fondo-botones; 
-    color: $letras-botones; 
+    padding: map.get($botones, padding-boton);
+    background-color:map.get($botones, fondo-botones);
+    color:map.get($botones, letras-boton);
     text-decoration: none; 
-    border: none; 
-    border-radius: 5px; 
+    border: map.get($botones, borde-botones);
+    border-radius:map.get($botones, borde-radius);
     cursor: pointer;
-    transition: background-color $transicion-botones;
+    transition: map.get($botones, transicion-boton);
     &:hover {
-        background-color: $hover_botones; 
+        background-color:map.get($botones, hover-boton); 
     }
 
 }
@@ -60,22 +65,22 @@
 
 /*reservar turno */
 .btn {
-    background-color:$fondo-botones; 
-    color: $letras-botones;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color:map.get($botones, fondo-botones);
+    color:map.get($botones, letras-boton);
+    border: map.get($botones, borde-botones);
+    padding: map.get($botones, padding-boton);
+    border-radius:map.get($botones, borde-radius);
     cursor: pointer;
-    transition: background-color $transicion-botones;
+    transition: map.get($botones, transicion-boton);
     &hover{
-        background-color: $hover_botones;
+        background-color:map.get($botones, hover-boton);
     }
 }
     /*boton contacto*/
     .btn-contacto{
     @extend.btn;
-    transition: background-color $transicion-botones;
+    transition: map.get($botones, transicion-boton);
     &:hover{
-        background-color: $hover_botones;
+        background-color:map.get($botones, hover-boton);
     }
     }
