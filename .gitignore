@@ -4,4 +4,4 @@ dist/
 *.log
 *.tmp
 .sass-cache/
-.vscode/
+/vscode
