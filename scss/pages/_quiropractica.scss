@@ -1,21 +1,36 @@
 @use 'sass:map';
 @use '../utilities/maps' as *;
 @use '../utilities/mixin' as mixin;
+@use"../base/variables" as *;
+
+@keyframes fadeSlide {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 .info-seccion {
     position: relative;
-    height: 100vh;
+    height: 60vh;
     background: url('../img/quiropractica.jpg') no-repeat center center/cover;
     display: flex;
     align-items: map.get($flex,alineacion);
     justify-content: map.get($flex,justificacion);
-    text-align: center;
+    text-align: $texto_centro;
     color: white;
     padding: 20px;
+    
 
     .info-contenido {
         background: rgba(0, 0, 0, 0.5);
         padding: 20px;
+        animation: fadeSlide 3s ease-out forwards;
+        opacity: 0;
         h1{
             @include mixin.titulo(32px, bold, 40px, #ffff);
         }
@@ -23,11 +38,11 @@
 }
 
 .que-es {
-    text-align: left;
+    text-align: $texto_izquierda;
     display: flex;
     align-items: map.get($flex,alineacion);
     justify-content: map.get($flex,entre);
-    gap: 20px;
+    gap: $gap;
     margin: 20px;
     padding: 25px; h2{ @include mixin.titulo(28px, bold, 36px,#ffffff);
 
@@ -35,7 +50,7 @@
     
 }
 .que-es2 {
-    text-align: right;
+    text-align: $texto-derecha;
     @extend .que-es; h2{@include mixin.titulo(28px, bold, 36px,#ffffff);
 }
 
@@ -44,10 +59,10 @@
 .subluxaciones {
    
     padding: 30px;
-    text-align: center;
+    text-align: $texto_centro;
 
     .apartado {
-        text-align: center;
+        text-align: $texto_centro;
         padding: 30px;
         max-width: 1200px;
         margin: 0 auto; h2 {
@@ -57,7 +72,7 @@
 
         p {
             font-size: 18px;
-            color: #555;
+            color:$color-texto;
             line-height: 1.6;
             margin-bottom: 20px;
         }
@@ -71,7 +86,7 @@
 
         .sub-card {
             width: 30%;
-            text-align: center;
+            text-align: $texto_centro;
             padding: 20px; h3{ @include mixin.titulo(24px, normal, 32px, #0c0c0b);
             }
         }
@@ -84,7 +99,7 @@
 
 .cierre {
     padding: 40px 20px;
-    text-align: center;
+    text-align: $texto_centro;
     margin-top: 40px;
 
     h2 {
@@ -95,7 +110,7 @@
 
     p {
         font-size: 18px;
-        color: #000000;
+        color: $color-texto;
         line-height: 1.6;
         margin: 0 auto 20px;
     }

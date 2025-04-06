@@ -3,18 +3,15 @@
 @use '../utilities/maps' as *;
 @use '../utilities/each';
 @use"../utilities/mixin";
+@use"../base/variables" as *;;
 
 main {
     padding: 50px 0; 
-   
 
     h1 {
-
-        text-align: center;
+        text-align: $texto_centro;
         padding: 10px 50px;
         @include mixin.titulo(32px, bold, 40px,#ffff);
-
-
     }
 
     .youtube-icon {
@@ -34,7 +31,7 @@ main {
     }
 
     .bienvenido {
-        text-align: center;
+        text-align: $texto_centro;
         padding: 50px 60px;
         h2{
             @include mixin.titulo(28px, bold, 36px,#010102);
@@ -53,7 +50,7 @@ main {
         padding: 15px;
 
         .card-text {
-            text-align: center;
+            text-align: $texto_centro;
             color: #333;
             margin: 0;
         }
@@ -66,7 +63,7 @@ main {
    
 
     .titulo-blog {
-        text-align: center;
+        text-align: $texto_centro;
         padding: 30px;
         margin: 20px 0;
         @include mixin.titulo(28px, bold, 36px,#ffffff);
@@ -85,8 +82,8 @@ main {
 
     .blog-card {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: map.get($flex, direccion);
+        justify-content: map.get($flex, entre);
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
@@ -98,7 +95,7 @@ main {
         height: auto;
         h3 {
             @include mixin.titulo(24px, normal, 32px, #013498db);
-          }
+        }
 
         &:hover {
             transform: translateY(-5px);
@@ -116,7 +113,7 @@ main {
     border: 2px solid #ccc;
 
     #servicios {
-        text-align: center;
+        text-align: $texto_centro;
         padding: 20px;
         
         @include mixin.titulo(28px, bold, 36px,#ffffff);
@@ -126,7 +123,7 @@ main {
     .accordion-card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: $gap;
         padding: 10px;
         justify-content: center;
         max-width: 90%;
@@ -183,7 +180,6 @@ main {
         flex: 1;
 
         h2 {
-            font-size: 28px;
             margin-bottom: 15px;
             @include mixin.titulo(28px, bold, 36px,#3498db);
         }
@@ -191,15 +187,14 @@ main {
         p {
             font-size: 16px;
             margin-bottom: 20px;
-            color: #0c0c0c;
+            color: $color-texto;
         }
     }
-   
 }
 
 .saber-mas {
     display: flex;
-    text-align: center;
+    text-align: $texto_centro;
     align-items: map.get($flex, alineacion);
     justify-content: map.get($flex, justificacion);
     margin-top: 30px;

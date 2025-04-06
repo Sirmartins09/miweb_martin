@@ -8,7 +8,7 @@
     padding: 20px 0;
     color: #adb5db;
     .container-fluid {
-        text-align: center;
+        text-align: $texto_centro;
     }
 }
 
@@ -30,7 +30,7 @@
 }
 
 .redes{
-    text-align: center;
+    text-align: $texto_centro;
 }
 .iconos{
     display: flex; 

@@ -10,10 +10,32 @@ html, body {
   box-sizing: border-box;
 }
 
+.site-header {
+  background-color: #3674B5;
+}
+
+.main {
+  background-color: #578FCA;
+}
+
+.py-4 {
+  background-color: #3A6A9A;
+}
+
+.franja-turno {
+  background-color: #3A6A9A;
+}
+
+.subluxaciones {
+  background-color: #fffefe;
+}
+
+.franja-nosotros {
+  background-color: rgb(167, 164, 164);
+}
 
 /* Estilos generales del header */
 .site-header {
-  background-color: #3674B5;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,30 +66,6 @@ nav ul {
 
 .nav-item .nav-link:hover {
   color: #baeb0b;
-}
-
-.header {
-  background-color: #3674B5;
-}
-
-.main {
-  background-color: #578FCA;
-}
-
-.py-4 {
-  background-color: #3A6A9A;
-}
-
-.franja-turnos {
-  background-color: #3A6A9A;
-}
-
-.subluxacion {
-  background-color: #ffffff;
-}
-
-.franja-nosotros {
-  background-color: rgb(167, 164, 164);
 }
 
 .py-4 {
@@ -190,7 +188,6 @@ nav ul {
 
 main {
   padding: 50px 0;
-  background-color: #578FCA;
 }
 main h1 {
   text-align: center;
@@ -339,7 +336,6 @@ main .card-body .card-text {
 }
 
 .franja-turno {
-  background-color: #3A6A9A;
   padding: 40px 20px;
 }
 .franja-turno .contenido-franja {
@@ -354,7 +350,6 @@ main .card-body .card-text {
   flex: 1;
 }
 .franja-turno .texto-franja h2 {
-  font-size: 28px;
   margin-bottom: 15px;
   font-size: 28px;
   font-weight: bold;
@@ -364,7 +359,7 @@ main .card-body .card-text {
 .franja-turno .texto-franja p {
   font-size: 16px;
   margin-bottom: 20px;
-  color: #0c0c0c;
+  color: #030303;
 }
 
 .saber-mas {
@@ -447,8 +442,19 @@ main .card-body .card-text {
 }
 
 /*pagina nosotros*/
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .franja-nosotros {
-  background-color: rgb(167, 164, 164);
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0;
 }
 .franja-nosotros .nosotros {
   text-align: left;
@@ -524,9 +530,19 @@ section.filosofia h2, section.instalaciones h2 {
   height: 400px;
 }
 
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .info-seccion {
   position: relative;
-  height: 100vh;
+  height: 60vh;
   background: url("../img/quiropractica.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -538,6 +554,8 @@ section.filosofia h2, section.instalaciones h2 {
 .info-seccion .info-contenido {
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
+  animation: fadeSlide 3s ease-out forwards;
+  opacity: 0;
 }
 .info-seccion .info-contenido h1 {
   font-size: 32px;
@@ -573,7 +591,6 @@ section.filosofia h2, section.instalaciones h2 {
 }
 
 .subluxaciones {
-  background: #ffffff;
   padding: 30px;
   text-align: center;
 }
@@ -592,7 +609,7 @@ section.filosofia h2, section.instalaciones h2 {
 }
 .subluxaciones .apartado p {
   font-size: 18px;
-  color: #555;
+  color: #030303;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -631,7 +648,7 @@ section.filosofia h2, section.instalaciones h2 {
 }
 .cierre p {
   font-size: 18px;
-  color: #000000;
+  color: #030303;
   line-height: 1.6;
   margin: 0 auto 20px;
 }

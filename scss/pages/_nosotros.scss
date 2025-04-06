@@ -2,14 +2,27 @@
 @use '../utilities/mixin' as mixin;
 @use 'sass:map';
 @use '../utilities/maps' as *;
+@use"../base/variables" as *;
+
+@keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 .franja-nosotros {
-
+    animation: slideUp 1s ease-out forwards;
+    opacity: 0;
     .nosotros {
-        text-align: left;
+        text-align:$texto_izquierda;
         padding: 20px;
         h1 {
-            text-align: left;
+            text-align: $texto_izquierda;
             @include mixin.titulo(32px, bold, 40px, #ffff)
         }
     }
@@ -36,7 +49,7 @@
             0 2px 10px rgba(0, 0, 0, 0.1), 
             all 0.3s ease-in-out
         );
-        text-align: center;
+        text-align:$texto_centro;
         width: 300px;
         border: 1px solid #c0c0c0;
         margin: 10px;

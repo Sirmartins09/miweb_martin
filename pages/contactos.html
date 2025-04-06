@@ -38,7 +38,7 @@
 
         </nav>
     </header>
-    <main>
+    <main class="main">
         <section class="formulario">
 
             <div class="card-contacto">
@@ -70,25 +70,25 @@
 
         <div class="contenedor">
             <!-- Formulario -->
-            <div class="formulario-contacto">
-                <div class="p-5 rounded contact-form">
-                    <div class="mb-4">
-                        <input type="text" class="form-control border-0 py-3" placeholder="Nombre">
-                    </div>
-                    <div class="mb-4">
-                        <input type="email" class="form-control border-0 py-3" placeholder="Email">
-                    </div>
-                    <div class="mb-4">
-                        <input type="text" class="form-control border-0 py-3" placeholder="Telefono">
-                    </div>
-                    <div class="mb-4">
-                        <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Mensaje"></textarea>
-                    </div>
-                    <div class="text-start">
-                        <button class="btn-contacto py-3 px-5" type="submit">Enviar</button>
-                    </div>
+            <form id="form-contacto" class="formulario-contacto">
+            <div class="p-5 rounded contact-form">
+                <div class="mb-4">
+                <input type="text" id="nombre" class="form-control border-0 py-3" placeholder="Nombre" required>
+                </div>
+                <div class="mb-4">
+                <input type="email" id="email" class="form-control border-0 py-3" placeholder="Email" required>
+                </div>
+                <div class="mb-4">
+                <input type="text" id="telefono" class="form-control border-0 py-3" placeholder="Teléfono" required>
+                </div>
+                <div class="mb-4">
+                <textarea id="mensaje" class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Mensaje" required></textarea>
+                </div>
+                <div class="text-start">
+                <button class="btn-contacto py-3 px-5" type="submit">Enviar</button>
                 </div>
             </div>
+            </form>
     
         
             <!-- Mapa -->
@@ -144,6 +144,22 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        </script>
+        <script>
+            document.getElementById('form-contacto').addEventListener('submit', function (e) {
+              e.preventDefault(); // Evita el envío tradicional
+        
+            const nombre = document.getElementById('nombre').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const telefono = document.getElementById('telefono').value.trim();
+            const mensaje = document.getElementById('mensaje').value.trim();
+    
+            const texto = `¡Hola! Soy ${nombre}%0AEmail: ${email}%0ATeléfono: ${telefono}%0AMensaje: ${mensaje}`;
+              const telefonoDestino = '5492615632792'; // Cambialo por tu número
+        
+            const url = `https://wa.me/${telefonoDestino}?text=${texto}`;
+              window.open(url, '_blank'); // Abre WhatsApp en una nueva pestaña
+            });
         </script>
 </body>
 </html>

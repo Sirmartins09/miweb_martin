@@ -1,11 +1,13 @@
 /*Pagina contactos*/
 @use 'sass:map';
 @use '../utilities/maps' as *;
+@use"../base/variables" as *;
+
 .formulario {
     display: flex;
     justify-content: map.get($flex,justificacion);
     align-items: map.get($flex,alineacion);
-    gap: 20px;
+    gap: $gap;
     padding: 20px; 
     flex-wrap: wrap;
     cursor: pointer;
@@ -14,7 +16,7 @@
         align-items: map.get($flex,alineacion);
         justify-content: map.get($flex,justificacion);
         flex-direction: map.get($flex,direccion);
-        text-align: center;
+        text-align: $texto_centro;
         padding: 20px;
         background-color: #1E3A8A;
         border-radius: 10px;
@@ -40,7 +42,7 @@
     display: flex;
     justify-content: map.get($flex,entre);
     align-items: stretch; 
-    gap: 20px; 
+    gap: $gap; 
     padding: 30px; 
     width: 100%; 
     max-width: 1200px; 

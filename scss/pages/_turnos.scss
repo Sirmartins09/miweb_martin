@@ -1,7 +1,10 @@
 @use '../utilities/mixin' as mixin;
+@use 'sass:map';
+@use '../utilities/maps' as *;
+@use"../base/variables" as *;
 /*pagina turnos*/
 .text-center{
-    text-align: center;
+    text-align: $texto_centro;
     margin-top: 50px;
     h1{
         @include mixin.titulo(32px, bold, 40px, #ffff)
@@ -9,8 +12,8 @@
     }
 .container {
     display: flex;           
-    justify-content: center;  
-    align-items: center;      
+    justify-content: map.get($flex,justificacion);  
+    align-items: map.get($flex,alineacion);  
     gap: 20px;                
     max-width: 900px;         
     width: 100%;   
@@ -34,7 +37,7 @@
 .image-container {
     flex: 1;                     
     display: flex;
-    justify-content: center;
+    justify-content: map.get($flex,justificacion); 
     img {
         width: 100%;                 
         max-width: 800px;            
