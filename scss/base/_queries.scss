@@ -1,5 +1,6 @@
-/*Media Queries para tablets (768px)*/
+/* Media Queries para tablets (768px) */
 @media (max-width: 768px) {
+    /*header*/
     header {
     flex-direction: column;
     align-items: center;
@@ -12,15 +13,16 @@
     margin-top: 10px;
     }
 
+    /*main*/
     .blog-container {
     grid-template-columns: 1fr;
     max-width: 90%;
+    .blog-card {
+        width: 90%;
+        max-width: 100%;
+        }
     }
 
-    .blog-card {
-    width: 90%;
-    max-width: 100%;
-    }
 
     .accordion-card {
     grid-template-columns: 1fr;
@@ -52,7 +54,7 @@
     }
     }
 
-    /* Pagina contacto */
+    /*pagina contacto*/
     .formulario {
     gap: 15px;
     padding: 20px 10px;
@@ -73,8 +75,7 @@
 
   /* Media Queries para móviles (320px - 480px) */
 @media (max-width: 480px) {
-    
-
+    /*header*/
     header {
     flex-direction: column;
     align-items: center;
@@ -82,11 +83,12 @@
     }
 
     .nav {
-    flex-direction: column;
+flex-direction: column;
     align-items: center;
     margin-top: 10px;
     }
 
+    /*main*/
     main {
     h1 {
         font-size: 32px;
@@ -103,16 +105,14 @@
     flex-direction: column;
     }
 
-    .blog-container {
-    grid-template-columns: 1fr;
-    max-width: 95%;
+    .blog .blog-container {
+        grid-template-columns: 1fr;
+        max-width: 95%;
+        .blog-card {
+            width: 100%;
+        }
     }
 
-    .blog-card {
-        width: 100%;
-        max-width: 100%;
-        padding: 10px;
-    }
 
     .card-container {
     .accordion-card {
@@ -133,6 +133,7 @@
     }
     }
 
+    /*Página contacto*/
     .contenedor {
     flex-direction: column;
     align-items: center;
@@ -144,15 +145,18 @@
     }
 
     .contact-form {
-        max-width: 100%;
-        padding: 10px;
+    max-width: 100%;
+    padding: 10px;
     }
 
-    /* Página Quiropraxia */
-    .info-contenido h1{
+    /*Página quiropraxia*/
+    .info-contenido {
+    h1 {
         text-align: center;
         padding: 10px;
     }
+    }
+
     .que-es,
     .que-es2 {
     flex-direction: column;
@@ -167,7 +171,7 @@
 
     .que-es {
     .imagen {
-        display: none; // Ocultar imagen de consulta.png
+        display: none;
     }
     }
 
@@ -175,12 +179,12 @@
     display: none;
     }
 
-    /* Página Nosotros */
+    /*Página Nosotros*/
     #carouselExample {
     display: none;
     }
 
-    /* Página Turnos */
+    /*Página Turno*/
     .image-container {
     padding: 20px;
     }

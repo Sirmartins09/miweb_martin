@@ -55,16 +55,14 @@ nav ul {
   gap: 15px;
   padding: 0;
 }
-
-.nav-item .nav-link {
+nav ul .nav-item .nav-link {
   color: white;
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
 }
-
-.nav-item .nav-link:hover {
+nav ul .nav-item .nav-link:hover {
   color: #baeb0b;
 }
 
@@ -103,7 +101,6 @@ nav ul {
   gap: 15px;
   margin-top: 10px;
 }
-
 .iconos img {
   width: 30px;
   height: 30px;
@@ -221,27 +218,32 @@ main .bienvenido h2 {
   line-height: 36px;
   color: #010102;
 }
+main .bienvenido p {
+  color: #030303;
+  font-size: 16px;
+  line-height: 1.6;
+}
 main .card-imagenes {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .card-body {
+main .card-imagenes .card .card-body {
   background-color: #e6f7ff;
   border-radius: 0 0 10px 10px;
   padding: 15px;
 }
-main .card-body .card-text {
+main .card-imagenes .card .card-body .card-text {
   text-align: center;
-  color: #333;
+  color: #030303;
   margin: 0;
 }
 
+/*Blog section*/
 .blog {
   padding: 20px;
 }
-
-.titulo-blog {
+.blog .titulo-blog {
   text-align: center;
   padding: 30px;
   margin: 20px 0;
@@ -250,8 +252,7 @@ main .card-body .card-text {
   line-height: 36px;
   color: #ffffff;
 }
-
-.blog-container {
+.blog .blog-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -260,27 +261,27 @@ main .card-body .card-text {
   padding: 0 10px;
   box-sizing: border-box;
 }
-.blog-container .blog-card {
+.blog .blog-container .blog-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #578FCA, #a8d5e2);
+  background: linear-gradient(135deg, #578fca, #a8d5e2);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   height: auto;
 }
-.blog-container .blog-card h3 {
+.blog .blog-container .blog-card h3 {
   font-size: 24px;
   font-weight: normal;
   line-height: 32px;
   color: rgba(1, 52, 152, 0.8588235294);
 }
-.blog-container .blog-card:hover {
+.blog .blog-container .blog-card:hover {
   transform: translateY(-5px);
 }
 
@@ -310,15 +311,21 @@ main .card-body .card-text {
   margin: 0 auto;
 }
 
+.accordion-item {
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #d7d7d7;
+}
 .accordion-button {
   background-color: #ffffff;
-  color: #3A6A9A;
+  color: #3a6a9a;
   font-weight: bold;
   padding: 15px;
   border-radius: 5px;
 }
 .accordion-button.collapsed {
-  background-color: #3A6A9A;
+  background-color: #3a6a9a;
   color: white;
 }
 .accordion-body {
@@ -326,13 +333,6 @@ main .card-body .card-text {
   color: #0c0c0c;
   padding: 15px;
   border-radius: 0 0 5px 5px;
-}
-.accordion-item {
-  width: 100%;
-  min-height: auto;
-  border: 1px solid #c0c0c0;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #d7d7d7;
 }
 
 .franja-turno {
@@ -346,17 +346,17 @@ main .card-body .card-text {
   justify-content: space-between;
   gap: 20px;
 }
-.franja-turno .texto-franja {
+.franja-turno .contenido-franja .texto-franja {
   flex: 1;
 }
-.franja-turno .texto-franja h2 {
+.franja-turno .contenido-franja .texto-franja h2 {
   margin-bottom: 15px;
   font-size: 28px;
   font-weight: bold;
   line-height: 36px;
   color: #3498db;
 }
-.franja-turno .texto-franja p {
+.franja-turno .contenido-franja .texto-franja p {
   font-size: 16px;
   margin-bottom: 20px;
   color: #030303;
@@ -423,17 +423,24 @@ main .card-body .card-text {
   max-width: 1200px;
   margin: 0 auto;
 }
-.contenedor .formulario-contacto, .contenedor .mapa {
+.contenedor .formulario-contacto,
+.contenedor .mapa {
   width: 48%;
   background: #1E3A8A;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 2px solid #000;
   border-radius: 10px;
 }
-.contenedor .formulario-contacto .contact-form, .contenedor .formulario-contacto .contact-map, .contenedor .mapa .contact-form, .contenedor .mapa .contact-map {
+.contenedor .formulario-contacto .contact-form,
+.contenedor .formulario-contacto .contact-map,
+.contenedor .mapa .contact-form,
+.contenedor .mapa .contact-map {
   padding: 20px;
 }
-.contenedor .formulario-contacto .contact-form .form-control, .contenedor .formulario-contacto .contact-map .form-control, .contenedor .mapa .contact-form .form-control, .contenedor .mapa .contact-map .form-control {
+.contenedor .formulario-contacto .contact-form .form-control,
+.contenedor .formulario-contacto .contact-map .form-control,
+.contenedor .mapa .contact-form .form-control,
+.contenedor .mapa .contact-map .form-control {
   width: 100%;
   margin-bottom: 15px;
   padding: 10px;
@@ -507,25 +514,27 @@ main .card-body .card-text {
 }
 
 /* Ajuste para la sección de filosofía */
-section.filosofia, section.instalaciones {
+section.filosofia,
+section.instalaciones {
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
 }
-section.filosofia h2, section.instalaciones h2 {
+section.filosofia h2,
+section.instalaciones h2 {
   font-size: 28px;
   font-weight: bold;
   line-height: 36px;
   color: white;
 }
 
-#carouselExample {
+.carrusel-consultorio #carouselExample {
   max-width: 1100px;
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
 }
-#carouselExample .carousel-inner img {
+.carrusel-consultorio #carouselExample .carousel-inner img {
   object-fit: cover;
   height: 400px;
 }
@@ -665,7 +674,7 @@ section.filosofia h2, section.instalaciones h2 {
   color: white;
 }
 
-.container {
+.contenedor-turnos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -673,11 +682,11 @@ section.filosofia h2, section.instalaciones h2 {
   max-width: 900px;
   width: 100%;
 }
-.container .col-md-6 {
+.contenedor-turnos .section-turnos {
   margin-bottom: 30px;
 }
-.container .col-md-6 .formulario-turno {
-  background-color: #0764af;
+.contenedor-turnos .section-turnos .formulario-turno {
+  background-color: #1E3A8A;
   color: #ffffff;
   padding: 20px;
   border-radius: 10px;
@@ -698,8 +707,9 @@ section.filosofia h2, section.instalaciones h2 {
   height: auto;
 }
 
-/*Media Queries para tablets (768px)*/
+/* Media Queries para tablets (768px) */
 @media (max-width: 768px) {
+  /*header*/
   header {
     flex-direction: column;
     align-items: center;
@@ -710,11 +720,12 @@ section.filosofia h2, section.instalaciones h2 {
     justify-content: center;
     margin-top: 10px;
   }
+  /*main*/
   .blog-container {
     grid-template-columns: 1fr;
     max-width: 90%;
   }
-  .blog-card {
+  .blog-container .blog-card {
     width: 90%;
     max-width: 100%;
   }
@@ -737,7 +748,7 @@ section.filosofia h2, section.instalaciones h2 {
   .contenido-mas p {
     padding: 30px;
   }
-  /* Pagina contacto */
+  /*pagina contacto*/
   .formulario {
     gap: 15px;
     padding: 20px 10px;
@@ -753,6 +764,7 @@ section.filosofia h2, section.instalaciones h2 {
 }
 /* Media Queries para móviles (320px - 480px) */
 @media (max-width: 480px) {
+  /*header*/
   header {
     flex-direction: column;
     align-items: center;
@@ -763,6 +775,7 @@ section.filosofia h2, section.instalaciones h2 {
     align-items: center;
     margin-top: 10px;
   }
+  /*main*/
   main h1 {
     font-size: 32px;
   }
@@ -772,14 +785,12 @@ section.filosofia h2, section.instalaciones h2 {
   .card-imagenes {
     flex-direction: column;
   }
-  .blog-container {
+  .blog .blog-container {
     grid-template-columns: 1fr;
     max-width: 95%;
   }
-  .blog-card {
+  .blog .blog-container .blog-card {
     width: 100%;
-    max-width: 100%;
-    padding: 10px;
   }
   .card-container .accordion-card {
     grid-template-columns: 1fr;
@@ -791,6 +802,7 @@ section.filosofia h2, section.instalaciones h2 {
   .imagen-franja img {
     max-width: 100%;
   }
+  /*Página contacto*/
   .contenedor {
     flex-direction: column;
     align-items: center;
@@ -803,7 +815,7 @@ section.filosofia h2, section.instalaciones h2 {
     max-width: 100%;
     padding: 10px;
   }
-  /* Página Quiropraxia */
+  /*Página quiropraxia*/
   .info-contenido h1 {
     text-align: center;
     padding: 10px;
@@ -822,11 +834,11 @@ section.filosofia h2, section.instalaciones h2 {
   .sub-card {
     display: none;
   }
-  /* Página Nosotros */
+  /*Página Nosotros*/
   #carouselExample {
     display: none;
   }
-  /* Página Turnos */
+  /*Página Turno*/
   .image-container {
     padding: 20px;
   }

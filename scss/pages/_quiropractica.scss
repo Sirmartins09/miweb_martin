@@ -5,14 +5,14 @@
 
 @keyframes fadeSlide {
     from {
-      opacity: 0;
-      transform: translateY(30px);
+    opacity: 0;
+    transform: translateY(30px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
     }
-  }
+}
 
 .info-seccion {
     position: relative;
@@ -44,20 +44,24 @@
     justify-content: map.get($flex,entre);
     gap: $gap;
     margin: 20px;
-    padding: 25px; h2{ @include mixin.titulo(28px, bold, 36px,#ffffff);
+    padding: 25px; 
+    
+    h2{ @include mixin.titulo(28px, bold, 36px,#ffffff);
 
     }
     
 }
 .que-es2 {
     text-align: $texto-derecha;
-    @extend .que-es; h2{@include mixin.titulo(28px, bold, 36px,#ffffff);
+    @extend .que-es;
+    
+    h2{@include mixin.titulo(28px, bold, 36px,#ffffff);
 }
 
 }
 
 .subluxaciones {
-   
+
     padding: 30px;
     text-align: $texto_centro;
 
@@ -87,7 +91,9 @@
         .sub-card {
             width: 30%;
             text-align: $texto_centro;
-            padding: 20px; h3{ @include mixin.titulo(24px, normal, 32px, #0c0c0b);
+            padding: 20px; 
+            
+            h3{ @include mixin.titulo(24px, normal, 32px, #0c0c0b);
             }
         }
     }

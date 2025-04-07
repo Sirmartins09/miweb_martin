@@ -1,37 +1,45 @@
 /* Estilos generales del header */
-
 @use 'sass:map';
 @use '../utilities/maps' as *;
 
 .site-header {
-    display: flex;
-    align-items:map.get($flex,alineacion);
-    justify-content: map.get($flex,entre);
-    padding: 10px 20px;
+display: flex;
+align-items: map.get($flex, alineacion);
+justify-content: map.get($flex, entre);
+padding: 10px 20px;
 }
 
 /* Logo */
-.logo img {
+.logo {
+    
+img {
     height: 60px;
     width: auto;
 }
+}
 
 /* Navegación */
-nav ul {
+nav {
+
+ul {
     list-style: none;
     display: flex;
     gap: 15px;
     padding: 0;
-}
 
-.nav-item .nav-link {
-    color: white;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-}
+    .nav-item {
 
-.nav-item .nav-link:hover {
-    color: #baeb0b;
+    .nav-link {
+        color: white;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+
+        &:hover {
+        color: #baeb0b;
+        }
+    }
+    }
+}
 }

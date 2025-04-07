@@ -1,7 +1,5 @@
-dist/
-.env
-.DS_Store
-*.log
-*.tmp
-.sass-cache/
-/vscode
+# Archivos y carpetas de Visual Studio Code
+.vscode/
+
+# Dependencias de Node.js
+node_modules/
