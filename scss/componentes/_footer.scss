@@ -1,9 +1,23 @@
+
+// FOOTER STYLES
+// 
+// Estilos para el pie de página. Contiene:
+// - Estilos de secciones de contacto
+// - Enlaces rápidos con efectos hover
+// - Componente de redes sociales
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Importaciones
+// -----------------------------------------------------------------------------
 @use "../base/variables" as *;
 @use 'sass:map';
 @use '../utilities/maps' as *;
 @use '../utilities/mixin' as mixin;
 
-
+// -----------------------------------------------------------------------------
+// Estilo base del footer (sección superior)
+// -----------------------------------------------------------------------------
 .py-4{
     padding: 20px 0;
     color: #adb5db;
@@ -12,8 +26,13 @@
     }
 }
 
+
+// -----------------------------------------------------------------------------
+// Columnas del footer (3 columnas en desktop)
+// -----------------------------------------------------------------------------
 .col-md-4{
     h5{ @include mixin.titulo(18px, normal, 24px, #ffffff);}
+      // Lista de enlaces (estilo para "Enlaces rápidos")
     .list-unstyled {
         a {
             color: #adb5db;
@@ -29,15 +48,20 @@
     }
 }
 
+
+// -----------------------------------------------------------------------------
+// Sección de Redes Sociales
+// -----------------------------------------------------------------------------
 .redes{
     text-align: $texto_centro;
 }
+// Contenedor de iconos sociales
 .iconos {
     display: flex;
     justify-content: map.get($flex, justificacion);
     gap: 15px;
     margin-top: 10px;
-
+// Estilo para imágenes de iconos (Facebook, Instagram, WhatsAp
     img {
     width: 30px;
     height: 30px;

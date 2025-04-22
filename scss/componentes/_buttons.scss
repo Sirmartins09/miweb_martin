@@ -1,8 +1,11 @@
+// -----------------------------------------------------------------------------
+// Importaciones
+// -----------------------------------------------------------------------------
 @use "../base/variables" as *;
 @use 'sass:map';
 @use '../utilities/maps' as *;
 
-/* leer mas*/
+/* SECCIÓN BLOG Boton de las Cards leer mas*/
 .read-more {
     display: inline-block;
     margin-top: auto;
@@ -26,7 +29,7 @@
 
 
 
-/*sacar turno main*/
+/*FRANJA DE TURNOS|sacar turno main*/
 
 .boton-turno {
     display: inline-block;
@@ -44,7 +47,7 @@
 }
 
 
-/*saber mas*/
+/*SECCIÓN "SABER MÁS"| boton saber mas*/
 .saber-mas-btn {
     display: inline-block;
     padding: map.get($botones, padding-boton);
@@ -63,7 +66,7 @@
 
 
 
-/*reservar turno */
+/*FORMULARIO TURNOS"| Boton resevar turno*/
 .btn {
     background-color:map.get($botones, fondo-botones);
     color:map.get($botones, letras-boton);
@@ -76,7 +79,8 @@
         background-color:map.get($botones, hover-boton);
     }
 }
-    /*boton contacto*/
+
+/*FORMULARIO CONTACTO"| Boton Enviar*/
     .btn-contacto{
     @extend.btn;
     transition: map.get($botones, transicion-boton);
