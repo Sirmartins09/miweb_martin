@@ -81,7 +81,8 @@ main{
             text-align: $texto_centro;
             padding: 30px;
             max-width: 1200px;
-            margin: 0 auto; h2 {
+            margin: 0 auto; 
+            h2 {
                 margin-bottom: 15px;
                 @include mixin.titulo(28px, bold, 36px, #ca541a);
             }
@@ -147,6 +148,7 @@ main{
         width: 500px; 
         text-align: left;
         margin-left: 5px;
+        
         h2{
             text-align: center;
             color: #ffffff;
@@ -188,7 +190,7 @@ main{
     
         .img-cierre2 {
         z-index: 1;
-        width: 200px
+        width: 200px;
         
         }
     }
