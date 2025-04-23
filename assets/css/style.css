@@ -944,6 +944,7 @@ main.main .contenedor-turnos .row .image-container img {
     margin: 0;
     text-align: center;
     width: 100%;
+    padding: 20px;
   }
   main .cierre .cierre-imagenes {
     padding: 20px;
